@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="সাজসুত্র — পোশাক ও ফেস কেয়ার পণ্যের সুন্দর সংগ্রহ।">
+  <title>সাজসুত্র | Style with care</title>
+  <style>
+    :root{--ink:#25231f;--muted:#777168;--cream:#faf7f1;--paper:#fffdf9;--rose:#a85f65;--line:#e9e1d7;--gold:#b28b55}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif}
+    a{color:inherit;text-decoration:none}.topbar{background:#29251f;color:#fff;text-align:center;padding:9px 12px;font-size:12px;letter-spacing:.3px}
+    header{background:rgba(255,253,249,.94);position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+    .nav{max-width:1120px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-family:Georgia,serif;font-size:27px;font-weight:700;letter-spacing:1px;color:#7f454b}.brand small{display:block;font:10px system-ui;letter-spacing:3px;color:var(--muted);text-align:center;margin-top:1px}
+    .links{display:flex;gap:25px;font-size:14px}.links a:hover{color:var(--rose)}
+    .navbtn,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--rose);color:white;padding:11px 17px;border-radius:3px;font-size:13px;border:0;cursor:pointer}
+    .hero{max-width:1120px;margin:30px auto 55px;padding:0 22px;display:grid;grid-template-columns:1.05fr .95fr;min-height:440px;gap:25px}
+    .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:35px 5px}
+    .eyebrow{color:var(--gold);font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+    h1{font-family:Georgia,"Noto Serif Bengali",serif;font-size:clamp(38px,5vw,62px);line-height:1.14;font-weight:500;margin:17px 0}
+    .hero p{color:var(--muted);line-height:1.9;max-width:450px;font-size:15px}
+    .hero-actions{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}.btn.secondary{background:transparent;color:var(--ink);border:1px solid #b9ada0}
+    .hero-art{background:linear-gradient(145deg,#e8d7ca,#c69b8d 55%,#8f6260);min-height:390px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .hero-art:before{content:"";position:absolute;width:68%;height:85%;border:1px solid rgba(255,255,255,.55);border-radius:48% 48% 4px 4px;bottom:-8%;left:16%}
+    .hero-art:after{content:"সাজসুত্র";position:absolute;color:rgba(255,255,255,.78);font:italic 42px Georgia;letter-spacing:3px}
+    .art-note{position:absolute;bottom:20px;right:20px;color:#fff;font-size:11px;letter-spacing:2px}
+    .section{max-width:1120px;margin:0 auto;padding:0 22px 65px}.section-head{text-align:center;margin-bottom:28px}.section-head h2{font:500 31px Georgia,"Noto Serif Bengali",serif;margin:9px 0}.section-head p{color:var(--muted);font-size:13px}
+    .categories{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.category{padding:28px 20px;background:var(--paper);border:1px solid var(--line);text-align:center;transition:.2s}.category:hover{transform:translateY(-4px);box-shadow:0 12px 30px #4a38200d}
+    .cat-icon{font-size:30px}.category h3{font:500 20px Georgia,"Noto Serif Bengali",serif;margin:12px 0 5px}.category p{font-size:12px;color:var(--muted);margin:0}
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{background:var(--paper);border:1px solid var(--line);padding:10px}.product-visual{height:220px;display:flex;align-items:center;justify-content:center;font-size:48px;background:linear-gradient(145deg,#eee2d8,#d8c0b4);color:#765d55}.product:nth-child(2) .product-visual{background:linear-gradient(145deg,#e9e2d4,#c9b9a0)}.product:nth-child(3) .product-visual{background:linear-gradient(145deg,#e7d8dc,#c99da7)}
+    .product-info{padding:13px 7px 8px}.product-info small{color:var(--gold);letter-spacing:1.5px;font-size:10px}.product-info h3{font-size:16px;font-weight:600;margin:7px 0}.price{font-weight:700;color:var(--rose);font-size:15px}.product-info .btn{width:100%;margin-top:12px}
+    .about{background:#eee7dd;padding:48px 22px;text-align:center}.about-inner{max-width:700px;margin:auto}.about h2{font:500 30px Georgia,"Noto Serif Bengali",serif}.about p{color:#6e675f;line-height:1.9;font-size:14px}
+    footer{background:#29251f;color:#eee8df;padding:38px 22px}.footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.footer-brand{font:26px Georgia,serif;color:#e3b8ae}.footer-inner p{font-size:12px;color:#c5bdb2;line-height:1.8}.footer-links{display:flex;gap:18px;align-items:center;font-size:13px}
+    .note{max-width:1120px;margin:20px auto;padding:0 22px;color:#8b5a39;font-size:12px;text-align:center}
+    @media(max-width:700px){.links{display:none}.hero{grid-template-columns:1fr;margin-top:15px}.hero-art{min-height:270px;grid-row:1}.hero-copy{padding:15px 2px}.categories{grid-template-columns:1fr}.products{grid-template-columns:1fr 1fr}.product-visual{height:160px}.nav{padding:12px 16px}.brand{font-size:23px}}
+    @media(max-width:420px){.products{grid-template-columns:1fr}.product-visual{height:210px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">সাজসুত্র-এ স্বাগতম · আপনার পছন্দের স্টাইল, যত্নের সঙ্গে</div>
+  <header><nav class="nav">
+    <a class="brand" href="#">সাজসুত্র<small>STYLE WITH CARE</small></a>
+    <div class="links"><a href="#home">হোম</a><a href="#categories">ক্যাটাগরি</a><a href="#products">পণ্য</a><a href="#about">আমাদের সম্পর্কে</a></div>
+    <a class="navbtn" href="#products">Shop Now</a>
+  </nav></header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">ELEGANCE · EVERYDAY</div>
+        <h1>নিজের মতো সাজুন,<br>নিজের যত্ন নিন।</h1>
+        <p>পোশাক ও ফেস কেয়ার পণ্যের বাছাই করা সংগ্রহ নিয়ে সাজসুত্র। প্রতিদিনের স্টাইলে যোগ হোক আপনার নিজস্ব ছোঁয়া।</p>
+        <div class="hero-actions"><a class="btn" href="#products">পণ্য দেখুন</a><a class="btn secondary" href="#about">আমাদের সম্পর্কে</a></div>
+      </div>
+      <div class="hero-art"><div class="art-note">A LITTLE BEAUTY IN EVERY DAY</div></div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-head"><div class="eyebrow">EXPLORE COLLECTIONS</div><h2>আমাদের ক্যাটাগরি</h2><p>আপনার পছন্দের সংগ্রহটি বেছে নিন</p></div>
+      <div class="categories">
+        <a class="category" href="#products"><div class="cat-icon">👔</div><h3>Men's Collection</h3><p>পুরুষদের পোশাক ও স্টাইল</p></a>
+        <a class="category" href="#products"><div class="cat-icon">👗</div><h3>Women's Collection</h3><p>নারীদের পোশাক ও ফ্যাশন</p></a>
+        <a class="category" href="#products"><div class="cat-icon">🌿</div><h3>Face Care</h3><p>দৈনন্দিন ত্বক পরিচর্যা</p></a>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-head"><div class="eyebrow">HANDPICKED FOR YOU</div><h2>জনপ্রিয় পণ্য</h2><p>এগুলো নমুনা পণ্য—নিজের পণ্যের ছবি, নাম ও দাম দিয়ে বদলে নিন</p></div>
+      <div class="products">
+        <article class="product"><div class="product-visual">✦</div><div class="product-info"><small>MEN'S COLLECTION</small><h3>Men's Style Item</h3><div class="price">৳ ৮৫০</div><a class="btn order" href="#" data-item="Men's Style Item">WhatsApp-এ অর্ডার</a></div></article>
+        <article class="product"><div class="product-visual">✿</div><div class="product-info"><small>WOMEN'S COLLECTION</small><h3>Women's Style Item</h3><div class="price">৳ ১,২৫০</div><a class="btn order" href="#" data-item="Women's Style Item">WhatsApp-এ অর্ডার</a></div></article>
+        <article class="product"><div class="product-visual">❀</div><div class="product-info"><small>FACE CARE</small><h3>Daily Face Care</h3><div class="price">৳ ৪৫০</div><a class="btn order" href="#" data-item="Daily Face Care">WhatsApp-এ অর্ডার</a></div></article>
+      </div>
+    </section>
+
+    <section class="about" id="about"><div class="about-inner"><div class="eyebrow">ABOUT SAJSUTRO</div><h2>সাজসুত্র — স্টাইলের সঙ্গে যত্ন</h2><p>আপনার দৈনন্দিন পছন্দকে সহজ ও সুন্দর করাই আমাদের লক্ষ্য। পোশাক থেকে ফেস কেয়ার—বাছাই করা পণ্য এক জায়গায়। পণ্যের বিস্তারিত জানতে বা অর্ডার করতে আমাদের সঙ্গে যোগাযোগ করুন।</p><a class="btn" id="contactBtn" href="#">যোগাযোগ করুন</a></div></section>
+  </main>
+  <div class="note">নোট: প্রকাশের আগে WhatsApp নম্বর, পণ্যের নাম, দাম, ছবি ও Facebook লিংক আপডেট করতে হবে।</div>
+  <footer><div class="footer-inner"><div><div class="footer-brand">সাজসুত্র</div><p>Style with care.<br>© <span id="year"></span> SajSutro. All rights reserved.</p></div><div class="footer-links"><a href="#home">হোম</a><a href="#products">পণ্য</a><a href="#about">যোগাযোগ</a></div></div></footer>
+  <script>
+    // Replace the placeholder with your WhatsApp number in international format, without + or spaces.
+    const WHATSAPP_NUMBER = "8801XXXXXXXXX";
+    function waLink(message){return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message)}
+    document.querySelectorAll(".order").forEach(a=>{a.href=waLink("আমি "+a.dataset.item+" অর্ডার করতে চাই। বিস্তারিত জানাবেন?");a.target="_blank";a.rel="noopener"});
+    const contact=document.getElementById("contactBtn");contact.href=waLink("সাজসুত্রের পণ্য সম্পর্কে জানতে চাই।");contact.target="_blank";contact.rel="noopener";
+    document.getElementById("year").textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
