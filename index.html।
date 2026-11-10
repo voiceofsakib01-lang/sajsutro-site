@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOOYAM Dark Spot Removal Cream | সাজসুত্র</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f8f8f5;color:#222}
+header{background:#fff;padding:18px;text-align:center;border-bottom:1px solid #eee}
+header h2{margin:0;color:#236b55}
+.hero{max-width:950px;margin:35px auto;padding:20px}
+.product{background:white;border-radius:18px;padding:25px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center;box-shadow:0 5px 25px #0000000c}
+.product img{width:100%;height:330px;object-fit:contain;border-radius:12px}
+h1{font-size:28px;line-height:1.4}
+.price{font-size:30px;color:#16845e;font-weight:bold}
+.old{color:#888;text-decoration:line-through;font-size:16px}
+.desc{color:#666;line-height:1.8}
+button{background:#16845e;color:white;border:0;padding:15px 25px;border-radius:9px;font-size:17px;width:100%;cursor:pointer}
+.details{background:white;margin-top:25px;padding:25px;border-radius:15px;line-height:1.8}
+footer{text-align:center;padding:25px;color:#777}
+@media(max-width:650px){.product{grid-template-columns:1fr}.product img{height:270px}h1{font-size:23px}}
+</style>
+</head>
+<body>
+
+<header>
+<h2>সাজসুত্র</h2>
+<p>আপনার সৌন্দর্যের বিশ্বস্ত ঠিকানা</p>
+</header>
+
+<main class="hero">
+<div class="product">
+
+<div>
+<img src="https://placehold.co/600x600/f5f5f5/333?text=MOOYAM+Cream"
+alt="MOOYAM Dark Spot Removal Cream">
+</div>
+
+<div>
+<p style="color:#16845e;font-weight:bold">SKIN CARE PRODUCT</p>
+<h1>MOOYAM Dark Spot Removal Cream</h1>
+<p class="price">৳ 850</p>
+<p class="desc">
+ত্বকের যত্নে MOOYAM Dark Spot Removal Cream।
+পণ্যের ব্যবহার ও উপাদান সম্পর্কে প্যাকেটের নির্দেশনা অনুসরণ করুন।
+</p>
+<button onclick="orderNow()">অর্ডার করুন</button>
+</div>
+
+</div>
+
+<div class="details">
+<h2>Product Details</h2>
+<p><b>Product:</b> MOOYAM Dark Spot Removal Cream</p>
+<p><b>Category:</b> Skin Care</p>
+<p><b>Price:</b> ৳850</p>
+<p><b>Brand:</b> MOOYAM</p>
+</div>
+</main>
+
+<footer>
+© 2026 সাজসুত্র | All Rights Reserved
+</footer>
+
+<script>
+function orderNow(){
+window.location.href="https://wa.me/8801766984712?text="+
+encodeURIComponent("আমি MOOYAM Dark Spot Removal Cream অর্ডার করতে চাই। দাম ৮৫০ টাকা।");
+}
+</script>
+
+</body>
+</html>
