@@ -3,115 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sajsutro - Glowing Skin Care Cream</title>
+    <title>Sajsutro - Premium Skin Care</title>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Hind Siliguri', sans-serif; }
-        body { background-color: #fff9f9; color: #333; line-height: 1.6; }
-        header { background: linear-gradient(135deg, #d47a8d, #b85b70); color: white; text-align: center; padding: 40px 20px; }
-        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        header p { font-size: 1.2rem; opacity: 0.9; }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-        .product-card { background: white; border-radius: 15px; padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); margin-top: -30px; }
-        .badge { background: #e74c3c; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.9rem; display: inline-block; margin-bottom: 15px; }
-        .price-tag { font-size: 1.8rem; color: #b85b70; font-weight: bold; margin: 15px 0; }
-        .price-tag del { color: #999; font-size: 1.2rem; margin-left: 10px; }
-        .btn-order { display: block; width: 100%; background: #25d366; color: white; text-align: center; padding: 15px; border-radius: 10px; font-size: 1.3rem; font-weight: bold; text-decoration: none; margin-top: 20px; box-shadow: 0 4px 12px rgba(37,211,102,0.3); transition: 0.3s; }
-        .btn-order:hover { background: #1ebc57; }
-        .features { margin: 30px 0; background: white; padding: 20px; border-radius: 15px; }
-        .features h3 { color: #b85b70; margin-bottom: 15px; }
+        body { background-color: #faf5f5; color: #333; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #e0859a, #c2697e); color: white; text-align: center; padding: 45px 20px; }
+        header h1 { font-size: 2.8rem; margin-bottom: 8px; font-weight: 700; }
+        header p { font-size: 1.25rem; opacity: 0.95; }
+        .container { max-width: 850px; margin: 0 auto; padding: 20px; }
+        .product-card { background: white; border-radius: 16px; padding: 30px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); margin-top: -35px; }
+        .badge { background: #ff4757; color: white; padding: 6px 16px; border-radius: 20px; font-weight: bold; font-size: 0.95rem; display: inline-block; margin-bottom: 15px; }
+        .price-tag { font-size: 2rem; color: #c2697e; font-weight: bold; margin: 15px 0; }
+        .price-tag del { color: #888; font-size: 1.3rem; margin-left: 10px; }
+        .btn-order { display: block; width: 100%; background: #25d366; color: white; text-align: center; padding: 16px; border-radius: 12px; font-size: 1.35rem; font-weight: bold; text-decoration: none; margin-top: 25px; box-shadow: 0 4px 15px rgba(37,211,102,0.35); transition: 0.3s; border: none; cursor: pointer; }
+        .btn-order:hover { background: #20ba5a; }
+        .features { margin: 25px 0; background: #fff4f6; padding: 20px; border-radius: 12px; border-left: 5px solid #c2697e; }
+        .features h3 { color: #c2697e; margin-bottom: 12px; }
         .features ul { list-style: none; }
-        .features li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+        .features li { margin-bottom: 8px; padding-left: 25px; position: relative; }
         .features li::before { content: "✔"; color: #25d366; position: absolute; left: 0; font-weight: bold; }
-        .form-group { margin-bottom: 15px; }
-        .form-group label { display: block; margin-bottom: 5px; font-weight: 600; }
-        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
-        footer { text-align: center; padding: 20px; color: #777; font-size: 0.9rem; margin-top: 40px; }
+        .form-group { margin-bottom: 18px; }
+        .form-group label { display: block; margin-bottom: 6px; font-weight: 600; color: #444; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; outline: none; transition: 0.2s; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: #c2697e; box-shadow: 0 0 5px rgba(194,105,126,0.2); }
+        footer { text-align: center; padding: 25px; color: #777; font-size: 0.95rem; margin-top: 40px; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>সাজসূত্র - Sajsutro</h1>
-    <p>আপনার প্রাকৃতিক সৌন্দর্যের বিশ্বস্ত সঙ্গী</p>
+    <p>আপনার প্রাকৃতিক সৌন্দর্যের নির্ভরযোগ্য সঙ্গী</p>
 </header>
 
 <div class="container">
     <div class="product-card">
-        <span class="badge">আজকের বিশেষ অফার!</span>
+        <span class="badge">🔥 আজকের বিশেষ অফার!</span>
         <h2>Sajsutro Premium Glowing Skin Care Cream</h2>
-        <p style="color: #666; margin-top: 5px;">ত্বককে দাগহীন, উজ্জ্বল ও সতেজ রাখতে বিশেষ ভাবে তৈরি।</p>
+        <p style="color: #666; margin-top: 6px;">ত্বককে দাগহীন, উজ্জ্বল ও কোমল রাখতে ১০০% কার্যকরী ক্রিম।</p>
         
         <div class="price-tag">
             ৳ ৮৫০ <del>৳ ১২০০</del>
         </div>
 
         <div class="features">
-            <h3>কেন Sajsutro Cream ব্যবহার করবেন?</h3>
+            <h3>কেন Sajsutro Cream বেছে নেবেন?</h3>
             <ul>
-                <li>ত্বকের মেছতা ও কালচে দাগ দূর করে।</li>
-                <li>ত্বককে ভেতর থেকে প্রাকৃতিক ভাবে উজ্জ্বল করে।</li>
-                <li>সব ধরনের ত্বকের (All Skin Types) জন্য উপযোগী।</li>
-                <li>১০০% নিরাপদ ও পাশ্বপ্রতিক্রিয়ামুক্ত।</li>
+                <li>ত্বকের মেছতা, রোদে পোড়া দাগ ও ব্রণের দাগ দূর করে।</li>
+                <li>মুখের ত্বক ভেতর থেকে ফর্সা ও প্রাকৃতিকভাবে উজ্জ্বল করে।</li>
+                <li>যেকোনো ত্বকের (All Skin Types) পুরুষ ও নারী উভয়ের জন্য উপযোগী।</li>
+                <li>কোনো ক্ষতিকর রাসায়নিক নেই, শতভাগ পার্শ্বপ্রতিক্রিয়ামুক্ত।</li>
             </ul>
         </div>
 
-        <h3 style="color: #b85b70; margin-bottom: 15px;">অর্ডার করতে নিচের ফর্মটি পূরণ করুন:</h3>
+        <h3 style="color: #c2697e; margin-bottom: 15px; font-size: 1.2rem;">অর্ডার কনফার্ম করতে নিচের ফর্মটি পূরণ করুন:</h3>
         
         <div class="form-group">
             <label>আপনার নাম:</label>
-            <input type="text" id="custName" placeholder="আপনার পুরো নাম লিখুন">
-        </div>
-        <div class="form-group">
-            <label>মোবাইল নম্বর:</label>
-            <input type="tel" id="custPhone" placeholder="017XXXXXXXX">
-        </div>
-        <div class="form-group">
-            <label>পূর্ণাঙ্গ ঠিকানা:</label>
-            <textarea id="custAddress" rows="2" placeholder="জেলা, থানা ও এলাকার নাম সহ"></textarea>
-        </div>
-        <div class="form-group">
-            <label>পরিমাণ (Quantity):</label>
-            <select id="custQty">
-                <option value="1">১টি (৳ ৮৫০)</option>
-                <option value="2">২টি (৳ ১৬০০ - ২০০ টাকা ছাড়)</option>
-            </select>
-        </div>
-
-        <button onclick="sendOrder()" class="btn-order">WhatsApp-এ সরাসরি অর্ডার করুন 🛒</button>
-    </div>
-</div>
-
-<footer>
-    <p>© 2026 Sajsutro. All rights reserved.</p>
-</footer>
-
-<script>
-    function sendOrder() {
-        var name = document.getElementById('custName').value;
-        var phone = document.getElementById('custPhone').value;
-        var address = document.getElementById('custAddress').value;
-        var qty = document.getElementById('custQty').value;
-
-        if(!name || !phone || !address) {
-            alert('অনুগ্রহ করে নাম, মোবাইল নম্বর এবং ঠিকানা পূরণ করুন।');
-            return;
-        }
-
-        var myNumber = "8801766984712"; // Your WhatsApp Number
-        var message = "হ্যালো সাজসূত্র! আমি একটি অর্ডার করতে চাই:\n\n" +
-                      "👤 নাম: " + name + "\n" +
-                      "📞 ফোন: " + phone + "\n" +
-                      "🏠 ঠিকানা: " + address + "\n" +
-                      "📦 পরিমাণ: " + qty + " টি\n\n" +
-                      "অনুগ্রহ করে আমার অর্ডারটি নিশ্চিত করুন।";
-
-        var encodedMessage = encodeURIComponent(message);
-        var whatsappUrl = "https://wa.me/" + myNumber + "?text=" + encodedMessage;
-        
-        window.open(whatsappUrl, '_blank');
-    }
-</script>
-
-</body>
-</html>
+            <input type="text" id
