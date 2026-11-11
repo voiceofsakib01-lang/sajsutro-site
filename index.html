@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajsutro | সাজসূত্র - গ্লোয়িং স্কিন কেয়ার ক্রিম</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Hind Siliguri for Bengali -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff5f7',
+                            100: '#ffe6ec',
+                            200: '#fccedd',
+                            500: '#e05275',
+                            600: '#c8375c',
+                            700: '#9b2241',
+                            gold: '#d4af37',
+                            dark: '#2d1a22'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Hind Siliguri', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: #fdfafb;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #fff0f3 0%, #ffe5ed 50%, #f7d6e0 100%);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 40%, #b38728 70%, #fbf5b7 100%);
+        }
+        .shine-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        .shine-effect::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                60deg,
+                transparent 30%,
+                rgba(255, 255, 255, 0.4) 50%,
+                transparent 70%
+            );
+            transform: rotate(30deg);
+            animation: shine 4s infinite;
+        }
+        @keyframes shine {
+            0% { transform: translate(-100%, -100%) rotate(30deg); }
+            20% { transform: translate(100%, 100%) rotate(30deg); }
+            100% { transform: translate(100%, 100%) rotate(30deg); }
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-brand-700 via-brand-600 to-brand-700 text-white text-xs md:text-sm py-2 px-4 text-center font-medium shadow-sm">
+        <span class="inline-flex items-center gap-2">
+            <i class="fa-solid fa-truck-fast text-yellow-300 animate-pulse"></i> 
+            আজই অর্ডার করলে সারাদেশে <strong>ক্যাশ অন ডেলিভারি একদম ফ্রি!</strong>
+        </span>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-rose-100">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <!-- Brand Logo Placeholder -->
+                <div class="w-10 h-10 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold text-xl shadow-md border-2 border-brand-gold">
+                    স
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold tracking-tight text-brand-700 leading-tight">Sajsutro</h1>
+                    <p class="text-[10px] text-brand-500 uppercase tracking-widest font-semibold">সাজসূত্র</p>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-6 font-medium text-gray-700 text-sm">
+                <a href="#cream-product" class="hover:text-brand-600 transition">প্রোডাক্ট বিবরণ</a>
+                <a href="#benefits" class="hover:text-brand-600 transition">উপকারিতা</a>
+                <a href="#how-to-use" class="hover:text-brand-600 transition">ব্যবহারের নিয়ম</a>
+                <a href="#reviews" class="hover:text-brand-600 transition">রিভিউ</a>
+                <a href="#upcoming" class="hover:text-brand-600 transition">আপকামিং কালেকশন</a>
+            </nav>
+
+            <a href="#order-form" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow-md transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
+                <i class="fa-solid fa-bag-shopping"></i> অর্ডার করুন
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-12 md:py-20 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            
+            <!-- Hero Text -->
+            <div class="space-y-6 text-center md:text-left">
+                <div class="inline-block bg-white/80 backdrop-blur-sm border border-brand-200 px-4 py-1.5 rounded-full shadow-sm">
+                    <span class="text-brand-600 text-xs md:text-sm font-semibold flex items-center gap-2 justify-center md:justify-start">
+                        <i class="fa-solid fa-sparkles text-brand-gold"></i> ১০০% প্রাকৃতিক অর্গানিক ফর্মুলা
+                    </span>
+                </div>
+                
+                <h1 class="text-3xl md:text-5xl font-extrabold text-brand-dark leading-tight">
+                    ত্বকের স্বাভাবিক উজ্জ্বলতা ফিরে পাক <span class="text-brand-600 underline decoration-brand-gold decoration-4">সাজসূত্র</span> গ্লোয়িং ক্রিমে
+                </h1>
+                
+                <p class="text-gray-650 text-base md:text-lg leading-relaxed">
+                    রোদে পোড়া দাগ, মেছতা এবং ত্বকের শুষ্কতা দূর করে ত্বককে করুন সফট, গ্লোয়িং এবং দাগহীন। কোনো ক্ষতিকর কেমিক্যাল ছাড়াই সম্পূর্ণ প্রাকৃতিক উপাদান দিয়ে তৈরি।
+                </p>
+
+                <!-- Price & Discount Badge -->
+                <div class="flex items-center justify-center md:justify-start gap-4 pt-2">
+                    <div class="text-left">
+                        <span class="text-gray-400 line-through text-lg">৳ ১,৫০০</span>
+                        <div class="text-3xl font-extrabold text-brand-700">৳ ৯৯০ <span class="text-sm font-normal text-gray-500">only</span></div>
+                    </div>
+                    <span class="bg-rose-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide animate-bounce">
+                        ৩৪% ছাড়
+                    </span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
+                    <a href="#order-form" class="shine-effect bg-brand-600 hover:bg-brand-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg transition text-center flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-cart-shopping"></i> এখনই অর্ডার করুন
+                    </a>
+                    <button onclick="orderViaWhatsAppDirect()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-6 py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> হোয়াটসঅ্যাপে অর্ডার
+                    </button>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-6 grid grid-cols-3 gap-3 border-t border-rose-200/60 text-center">
+                    <div>
+                        <i class="fa-solid fa-leaf text-emerald-600 text-xl mb-1"></i>
+                        <p class="text-xs font-medium text-gray-600">১০০% অর্গানিক</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-shield-halved text-brand-600 text-xl mb-1"></i>
+                        <p class="text-xs font-medium text-gray-600">পার্শ্বপ্রতিক্রিয়ামুক্ত</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-truck-ramp-box text-brand-gold text-xl mb-1"></i>
+                        <p class="text-xs font-medium text-gray-600">ক্যাশ অন ডেলিভারি</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image Showcase -->
+            <div id="cream-product" class="relative flex justify-center">
+                <div class="relative w-72 h-72 sm:w-96 sm:h-96 rounded-3xl bg-white p-4 shadow-2xl border-4 border-white">
+                    <!-- Image Placeholder for Skin Care Cream -->
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" 
+                         alt="Sajsutro Skin Care Cream" 
+                         class="w-full h-full object-cover rounded-2xl"
+                         onerror="this.src='https://placehold.co/600x600/fccedd/9b2241?text=Sajsutro+Cream'">
+                    
+                    <!-- Floating Highlight Tag -->
+                    <div class="absolute -bottom-4 -left-4 bg-white/95 backdrop-blur shadow-xl border border-rose-100 p-3 rounded-2xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center text-brand-600">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-gray-800">৪.৯/৫ স্টার রেটিং</div>
+                            <div class="text-xs text-gray-500">৫০০+ সন্তুষ্ট কাস্টমার</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Key Benefits / Features -->
+    <section id="benefits" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-brand-600 text-sm font-bold uppercase tracking-wider">কেন ব্যবহার করবেন?</span>
+                <h2 class="text-3xl font-bold text-brand-dark mt-2">সাজসূত্র গ্লোয়িং ক্রিমের বিশেষ উপকারিতা</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Benefit 1 -->
+                <div class="bg-brand-50/50 p-6 rounded-2xl border border-rose-100 hover:shadow-md transition group">
+                    <div class="w-14 h-14 bg-white text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-4 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">ত্বক উজ্জ্বল করে</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">ত্বকের ভেতর থেকে ব্রাইটনেস বৃদ্ধি করে প্রাকৃতিক গ্লো ফিরিয়ে আনে।</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-brand-50/50 p-6 rounded-2xl border border-rose-100 hover:shadow-md transition group">
+                    <div class="w-14 h-14 bg-white text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-4 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">দাগ ও মেছতা দূর করে</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">রোদে পোড়া কালো ছোপ ছোপ দাগ এবং পুরনো মেছতার দাগ কমায়।</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-brand-50/50 p-6 rounded-2xl border border-rose-100 hover:shadow-md transition group">
+                    <div class="w-14 h-14 bg-white text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-4 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">ডিপ হাইড্রেশন</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">ত্বককে রুক্ষতা থেকে রক্ষা করে ২৪ ঘণ্টা আর্দ্র ও সফট রাখে।</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="bg-brand-50/50 p-6 rounded-2xl border border-rose-100 hover:shadow-md transition group">
+                    <div class="w-14 h-14 bg-white text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-4 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">সব ত্বকের জন্য উপযোগী</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">তৈলাক্ত, শুষ্ক বা সেনসিটিভ—যেকোনো ত্বকেই নিরাপদভাবে ব্যবহারযোগ্য।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section id="how-to-use" class="py-16 bg-gradient-to-b from-white to-rose-50/50">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <span class="text-brand-600 text-sm font-bold uppercase tracking-wider">সহজ ব্যবহার বিধি</span>
+                <h2 class="text-3xl font-bold text-brand-dark mt-2">সেরা ফলাফলের জন্য ব্যবহারের ৩টি ধাপ</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-rose-100 text-center relative">
+                    <div class="w-10 h-10 bg-brand-gold text-white font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">১</div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">মুখ পরিষ্কার করুন</h3>
+                    <p class="text-gray-600 text-sm">হালকা ফেসওয়াশ বা পানি দিয়ে মুখ ভালো করে ধুয়ে শুকনো তোয়ালে দিয়ে মুছে নিন।</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-rose-100 text-center relative">
+                    <div class="w-10 h-10 bg-brand-gold text-white font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">২</div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">ক্রিম এপ্লাই করুন</h3>
+                    <p class="text-gray-600 text-sm">পরিমাণমতো সাজসূত্র ক্রিম নিয়ে মুখে ও ঘাড়ে হালকা হাতে ম্যাসাজ করুন।</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-rose-100 text-center relative">
+                    <div class="w-10 h-10 bg-brand-gold text-white font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">৩</div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">নিয়মিত ব্যবহার</h3>
+                    <p class="text-gray-600 text-sm">প্রতিদিন রাতে ঘুমানোর আগে ব্যবহার করুন। মাত্র ৭-১৪ দিনেই পরিবর্তন দেখুন।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews / Testimonials -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <span class="text-brand-600 text-sm font-bold uppercase tracking-wider">কাস্টমার ফিডব্যাক</span>
+                <h2 class="text-3xl font-bold text-brand-dark mt-2">আমাদের সম্মানিত ক্রেতাদের মতামত</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-rose-50/40 p-6 rounded-2xl border border-rose-100 shadow-sm">
+                    <div class="flex text-amber-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-4 leading-relaxed">"আমি ২ সপ্তাহ ধরে সাজসূত্র ক্রিমটি ব্যবহার করছি। আমার মেছতার দাগ অনেকটাই হালকা হয়ে গেছে। ত্বক অনেক মসৃণ লাগে।"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-200 rounded-full flex items-center justify-center font-bold text-brand-700">ন</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-gray-800">নুসরাত জাহান</h4>
+                            <p class="text-xs text-gray-500">ঢাকা</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-rose-50/40 p-6 rounded-2xl border border-rose-100 shadow-sm">
+                    <div class="flex text-amber-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-4 leading-relaxed">"প্যাকেজিং এবং ক্রিমে কোনো আঠালো ভাব নেই। ত্বকে খুব সুন্দরভাবে মিশে যায়। ডেলিভারিও খুব দ্রুত পেয়েছি!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-200 rounded-full flex items-center justify-center font-bold text-brand-700">স</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-gray-800">সাবরিনা সুলতানা</h4>
+                            <p class="text-xs text-gray-500">চট্টগ্রাম</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-rose-50/40 p-6 rounded-2xl border border-rose-100 shadow-sm">
+                    <div class="flex text-amber-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-4 leading-relaxed">"অর্গানিক প্রোডাক্ট হিসেবে এটি সেরা। সেনসিটিভ স্কিনেও কোনো র্যাশ বা প্রবলেম হয়নি। ধন্যবাদ সাজসূত্রকে।"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-200 rounded-full flex items-center justify-center font-bold text-brand-700">ম</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-gray-800">মেহজাবিন মেহু</h4>
+                            <p class="text-xs text-gray-500">সিলেট</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Collections (Saree, Three Piece, Jewelry) -->
+    <section id="upcoming" class="py-16 bg-brand-dark text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <span class="text-brand-gold text-sm font-bold uppercase tracking-wider">শীঘ্রই আসছে</span>
+                <h2 class="text-3xl font-bold mt-2 text-rose-100">সাজসূত্র-এর আপকামিং ফ্যাশন কালেকশন</h2>
+                <p class="text-gray-400 text-sm mt-2">স্কিন কেয়ারের পাশাপাশি খুব জলদি নিয়ে আসছি আপনার পছন্দের ফ্যাশন আইটেম</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <!-- Saree -->
+                <div class="relative rounded-2xl overflow-hidden group h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80" 
+                         alt="Sajsutro Saree Collection" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                         onerror="this.src='https://placehold.co/600x400/9b2241/fff?text=Saree+Collection'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <span class="bg-brand-gold text-black font-bold text-[10px] px-2.5 py-1 rounded-full w-max mb-2">Coming Soon</span>
+                        <h3 class="text-xl font-bold text-white">এক্সক্লুসিভ শাড়ি</h3>
+                    </div>
+                </div>
+
+                <!-- Three Piece -->
+                <div class="relative rounded-2xl overflow-hidden group h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=600&q=80" 
+                         alt="Sajsutro Three Piece Collection" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                         onerror="this.src='https://placehold.co/600x400/9b2241/fff?text=Three+Piece'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <span class="bg-brand-gold text-black font-bold text-[10px] px-2.5 py-1 rounded-full w-max mb-2">Coming Soon</span>
+                        <h3 class="text-xl font-bold text-white">ডিজাইনার থ্রি-পিস</h3>
+                    </div>
+                </div>
+
+                <!-- Jewelry -->
+                <div class="relative rounded-2xl overflow-hidden group h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" 
+                         alt="Sajsutro Jewelry Collection" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                         onerror="this.src='https://placehold.co/600x400/9b2241/fff?text=Jewelry+Collection'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <span class="bg-brand-gold text-black font-bold text-[10px] px-2.5 py-1 rounded-full w-max mb-2">Coming Soon</span>
+                        <h3 class="text-xl font-bold text-white">ফ্যাশন জুয়েলারি ও চুরি</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout / Order Form Section -->
+    <section id="order-form" class="py-16 gradient-bg">
+        <div class="max-w-4xl mx-auto px-4">
+            
+            <div class="bg-white rounded-3xl shadow-xl p-6 md:p-10 border border-rose-200">
+                <div class="text-center mb-8">
+                    <span class="bg-rose-100 text-brand-700 font-semibold text-xs px-4 py-1.5 rounded-full">ক্যাশ অন ডেলিভারি</span>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-brand-dark mt-3">অর্ডার সম্পন্ন করতে নিচের ফর্মটি পূরণ করুন</h2>
+                    <p class="text-gray-500 text-sm mt-1">পণ্য হাতে পেয়ে মূল্য পরিশোধ করুন। কোন অগ্রিম টাকা দিতে হবে না।</p>
+                </div>
+
+                <form id="checkoutForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    
+                    <!-- Order Items Summary & Quantity Selector -->
+                    <div class="bg-brand-50 p-4 rounded-2xl border border-rose-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=200&q=80" 
+                                 alt="Cream" 
+                                 class="w-16 h-16 rounded-xl object-cover border border-white"
+                                 onerror="this.src='https://placehold.co/100x100/fccedd/9b2241?text=Cream'">
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-base">সাজসূত্র গ্লোয়িং স্কিন কেয়ার ক্রিম</h4>
+                                <p class="text-xs text-gray-500">প্রাকৃতিক উপাদান সমৃদ্ধ (50g)</p>
+                                <p class="text-brand-700 font-bold text-sm mt-1">৳ <span id="unitPrice">990</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Quantity Control -->
+                        <div class="flex items-center gap-3 bg-white px-3 py-1.5 rounded-xl border border-rose-200">
+                            <button type="button" onclick="updateQty(-1)" class="w-8 h-8 rounded-lg bg-gray-100 text-gray-700 font-bold hover:bg-rose-100 hover:text-brand-700 transition">-</button>
+                            <span id="qtyDisplay" class="font-bold text-gray-800 text-base min-w-[20px] text-center">1</span>
+                            <button type="button" onclick="updateQty(1)" class="w-8 h-8 rounded-lg bg-gray-100 text-gray-700 font-bold hover:bg-rose-100 hover:text-brand-700 transition">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Input Fields -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 mb-1">আপনার নাম *</label>
+                            <input type="text" id="custName" required placeholder="আপনার পূর্ণ নাম লিখুন" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 mb-1">মোবাইল নম্বর *</label>
+                            <input type="tel" id="custPhone" required placeholder="১১ ডিজিটের মোবাইল নম্বর" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">সম্পূর্ণ ঠিকানা *</label>
+                        <textarea id="custAddress" required rows="2" placeholder="জেলা, থানা, এলাকা এবং বাসা নম্বর লিখুন" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm"></textarea>
+                    </div>
+
+                    <!-- Total Price Calculation -->
+                    <div class="border-t border-b border-gray-100 py-4 space-y-2">
+                        <div class="flex justify-between text-sm text-gray-600">
+                            <span>সাবটোটাল:</span>
+                            <span>৳ <span id="subtotalPrice">990</span></span>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-600">
+                            <span>ডেলিভারি চার্জ:</span>
+                            <span class="text-emerald-600 font-bold">ফ্রি (Free)</span>
+                        </div>
+                        <div class="flex justify-between text-lg font-extrabold text-brand-dark pt-1">
+                            <span>সর্বমোট মূল্য:</span>
+                            <span class="text-brand-700">৳ <span id="totalPrice">990</span></span>
+                        </div>
+                    </div>
+
+                    <!-- Submit Buttons -->
+                    <div class="space-y-3 pt-2">
+                        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 rounded-xl shadow-lg transition text-base flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-check-circle"></i> অর্ডার নিশ্চিত করুন (৳ <span id="btnTotalPrice">990</span>)
+                        </button>
+                        
+                        <button type="button" onclick="orderViaWhatsAppWithForm()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-md transition text-base flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> হোয়াটসঅ্যাপের মাধ্যমে সরাসরি অর্ডার পাঠান
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-8 h-8 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold text-lg">স</div>
+                    <span class="text-2xl font-bold text-white tracking-tight">Sajsutro</span>
+                </div>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    সাজসূত্র—আপনার প্রাত্যহিক সৌন্দর্য ও লাইফস্টাইল এর নির্ভরযোগ্য সঙ্গী। আমরা দিচ্ছি ১০০% আসল ও মানসম্মত অর্গানিক বিউটি প্রোডাক্টস।
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-sm mb-3">যোগাযোগ</h4>
+                <ul class="text-xs space-y-2 text-gray-400">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-500"></i> +880 1700-000000</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-500"></i> support@sajsutro.xyz</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-500"></i> ঢাকা, বাংলাদেশ</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-sm mb-3">সোশ্যাল মিডিয়াতে ফলো করুন</h4>
+                <div class="flex gap-3">
+                    <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-brand-600 rounded-full flex items-center justify-center text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-brand-600 rounded-full flex items-center justify-center text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-emerald-600 rounded-full flex items-center justify-center text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2026 Sajsutro (সাজসূত্র). All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Order Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
+        <div class="bg-white rounded-3xl p-6 md:p-8 max-w-sm w-full text-center shadow-2xl animate-scale-in">
+            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800">অর্ডার সফল হয়েছে!</h3>
+            <p class="text-sm text-gray-600 mt-2">ধন্যবাদ! আপনার অর্ডারটি গ্রহণ করা হয়েছে। খুব শীঘ্রই আমাদের প্রতিনিধ আপনাকে কল করে অর্ডারটি কনফার্ম করবেন।</p>
+            <button onclick="closeModal()" class="mt-6 w-full bg-brand-600 text-white font-bold py-3 rounded-xl hover:bg-brand-700 transition">ঠিক আছে</button>
+        </div>
+    </div>
+
+    <!-- Script for Dynamic Logic & WhatsApp Order Handling -->
+    <script>
+        const unitPrice = 990;
+        let quantity = 1;
+        const whatsappNumber = "8801700000000"; // Replace with real Sajsutro WhatsApp Number
+
+        function updateQty(change) {
+            quantity += change;
+            if (quantity < 1) quantity = 1;
+
+            const total = unitPrice * quantity;
+            document.getElementById('qtyDisplay').innerText = quantity;
+            document.getElementById('subtotalPrice').innerText = total.toLocaleString('en-IN');
+            document.getElementById('totalPrice').innerText = total.toLocaleString('en-IN');
+            document.getElementById('btnTotalPrice').innerText = total.toLocaleString('en-IN');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('successModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('successModal').classList.add('hidden');
+            document.getElementById('checkoutForm').reset();
+            quantity = 1;
+            updateQty(0);
+        }
+
+        // Direct WhatsApp order from hero section
+        function orderViaWhatsAppDirect() {
+            const message = encodeURIComponent(`হ্যালো সাজসূত্র, আমি আপনার গ্লোয়িং স্কিন কেয়ার ক্রিমটি (৳৯৯০) অর্ডার করতে চাই।`);
+            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+        }
+
+        // WhatsApp order with details filled in checkout form
+        function orderViaWhatsAppWithForm() {
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim();
+            const address = document.getElementById('custAddress').value.trim();
+            const total = unitPrice * quantity;
+
+            if (!name || !phone || !address) {
+                alert('অনুগ্রহ করে নাম, মোবাইল নম্বর এবং ঠিকানা পূরণ করুন।');
+                return;
+            }
+
+            const messageText = `*নতুন অর্ডার (Sajsutro)*\n\n` +
+                `*প্রোডাক্ট:* সাজসূত্র গ্লোয়িং ক্রিম\n` +
+                `*পরিমাণ:* ${quantity} টি\n` +
+                `*মোট মূল্য:* ৳${total}\n\n` +
+                `*কাস্টমার বিবরণ:*\n` +
+                `*নাম:* ${name}\n` +
+                `*ফোন:* ${phone}\n` +
+                `*ঠিকানা:* ${address}\n\n` +
+                `পণ্যটি ক্যাশ অন ডেলিভারিতে পাঠিয়েন।`;
+
+            window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
